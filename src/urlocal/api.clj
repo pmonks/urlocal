@@ -27,10 +27,10 @@
     milliseconds to wait when establishing the socket connection
   * `:read-timeout` (`int`, default `1000`): the maximum number of milliseconds
     to wait when reading content from the socket connection
-  * `:follow-redirects?` (`boolean`, default `false`): whether to follow a
+  * `:follow-redirects?` (`boolean`, default `true`): whether to follow a
     single redirect (HTTP status codes 301, 302) if the server issues one (more
     than one redirect will throw an exception)
-  * `:retry-when-throttled?` (`boolean`, default `false`): whether to
+  * `:retry-when-throttled?` (`boolean`, default `true`): whether to
     automatically handle throttled HTTP requests (HTTP status code 429), by
     sleeping as requested by the `Retry-After` HTTP response header, then
     retrying the request once (if a second 429 is returned upon retry, an
@@ -48,8 +48,8 @@
   ([url {:keys [connect-timeout read-timeout follow-redirects? retry-when-throttled? max-retry-after request-headers return-cached-content-on-exception?]
          :or   {connect-timeout                     1000
                 read-timeout                        1000
-                follow-redirects?                   false
-                retry-when-throttled?               false
+                follow-redirects?                   true
+                retry-when-throttled?               true
                 max-retry-after                     10
                 request-headers                     {"User-Agent" "https://github.com/pmonks/urlocal"}
                 return-cached-content-on-exception? true}

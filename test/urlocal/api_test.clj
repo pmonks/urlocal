@@ -75,7 +75,8 @@
     (is (valid-cached-response? "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt" (test-is "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt")))
     (is (valid-cached-response? "https://creativecommons.org/licenses/by-nd/4.0/legalcode.txt"    (test-is "https://creativecommons.org/licenses/by-nd/4.0/legalcode.txt")))
     (is (valid-cached-response? "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt" (test-is "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt")))
-    (is (valid-cached-response? "http://www.wtfpl.net/txt/copying/"                               (test-is "http://www.wtfpl.net/txt/copying/")))
+    ; Note: URLs don't match because this is a redirect 
+    (is (valid-cached-response? "https://www.wtfpl.net/txt/copying/"                              (test-is "http://www.wtfpl.net/txt/copying/")))
     (is (valid-cached-response? "https://www.mozilla.org/media/MPL/2.0/index.txt"                 (test-is "https://www.mozilla.org/media/MPL/2.0/index.txt")))
     (is (valid-cached-response? "https://mit-license.org/license.txt"                             (test-is "https://mit-license.org/license.txt"))))
   (testing "Redirected requests"

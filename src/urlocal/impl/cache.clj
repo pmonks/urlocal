@@ -163,8 +163,8 @@
                                 already-redirected?
                                 already-retried?
                                 {:keys [follow-redirects? retry-when-throttled? max-retry-after]
-                                 :or   {follow-redirects?     false
-                                        retry-when-throttled? false
+                                 :or   {follow-redirects?     true
+                                        retry-when-throttled? true
                                         max-retry-after       10}
                                  :as   opts}]
    (let [url           (.getURL           conn)
