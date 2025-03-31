@@ -1,19 +1,11 @@
 ;
 ; Copyright © 2023 Peter Monks
 ;
-; Licensed under the Apache License Version 2.0 (the "License");
-; you may not use this file except in compliance with the License.
-; You may obtain a copy of the License at
+; This Source Code Form is subject to the terms of the Mozilla Public
+; License, v. 2.0. If a copy of the MPL was not distributed with this
+; file, You can obtain one at https://mozilla.org/MPL/2.0/.
 ;
-;     http://www.apache.org/licenses/LICENSE-2.0
-;
-; Unless required by applicable law or agreed to in writing software
-; distributed under the License is distributed on an "AS IS" BASIS,
-; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND either express or implied.
-; See the License for the specific language governing permissions and
-; limitations under the License.
-;
-; SPDX-License-Identifier: Apache-2.0
+; SPDX-License-Identifier: MPL-2.0
 ;
 
 (ns urlocal.api
@@ -35,13 +27,14 @@
     milliseconds to wait when establishing the socket connection
   * `:read-timeout` (`int`, default `1000`): the maximum number of milliseconds
     to wait when reading content from the socket connection
-  * `:follow-redirects?` (`boolean`, default `false`): whether to follow a
+  * `:follow-redirects?` (`boolean`, default `true`): whether to follow a
     single redirect (HTTP status codes 301, 302) if the server issues one (more
     than one redirect will throw an exception)
-  * `:retry-when-throttled?` (`boolean`, default `false`): whether to
+  * `:retry-when-throttled?` (`boolean`, default `true`): whether to
     automatically handle throttled HTTP requests (HTTP status code 429), by
     sleeping as requested by the `Retry-After` HTTP response header, then
-    retrying the request
+    retrying the request once (if a second 429 is returned upon retry, an
+    exception will be thrown)
   * `:max-retry-after` (`int`, default `10`): the maximum number of seconds to
     sleep when waiting to retry a throttled request
   * `:request-headers` (a `Map` with `String` keys and values): a map of request
@@ -55,10 +48,10 @@
   ([url {:keys [connect-timeout read-timeout follow-redirects? retry-when-throttled? max-retry-after request-headers return-cached-content-on-exception?]
          :or   {connect-timeout                     1000
                 read-timeout                        1000
-                follow-redirects?                   false
-                retry-when-throttled?               false
+                follow-redirects?                   true
+                retry-when-throttled?               true
                 max-retry-after                     10
-                request-headers                     {"User-Agent" "com.github.pmonks/urlocal"}
+                request-headers                     {"User-Agent" "https://github.com/pmonks/urlocal"}
                 return-cached-content-on-exception? true}
          :as   opts}]
    (when-let [u (io/as-url url)]
