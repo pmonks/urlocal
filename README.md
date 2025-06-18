@@ -1,14 +1,15 @@
-| | | | |
-|---:|:---:|:---:|:---:|
-| [**release**](https://github.com/pmonks/urlocal/tree/release) | [![CI](https://github.com/pmonks/urlocal/actions/workflows/ci.yml/badge.svg?branch=release)](https://github.com/pmonks/urlocal/actions?query=workflow%3ACI+branch%3Arelease) | [![Dependencies](https://github.com/pmonks/urlocal/actions/workflows/dependencies.yml/badge.svg?branch=release)](https://github.com/pmonks/urlocal/actions?query=workflow%3Adependencies+branch%3Arelease) | [![Vulnerabilities](https://github.com/pmonks/urlocal/actions/workflows/vulnerabilities.yml/badge.svg?branch=release)](https://pmonks.github.io/urlocal/nvd/dependency-check-report.html) |
-| [**dev**](https://github.com/pmonks/urlocal/tree/dev)  | [![CI](https://github.com/pmonks/urlocal/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/urlocal/actions?query=workflow%3ACI+branch%3Adev) | [![Dependencies](https://github.com/pmonks/urlocal/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/urlocal/actions?query=workflow%3Adependencies+branch%3Adev) | [![Vulnerabilities](https://github.com/pmonks/urlocal/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://github.com/pmonks/urlocal/actions?query=workflow%3Avulnerabilities+branch%3Adev) |
-
-[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/urlocal)](https://clojars.org/com.github.pmonks/urlocal/) [![Open Issues](https://img.shields.io/github/issues/pmonks/urlocal.svg)](https://github.com/pmonks/urlocal/issues) [![License](https://img.shields.io/github/license/pmonks/urlocal.svg)](https://github.com/pmonks/urlocal/blob/release/LICENSE)
-
-
 <img alt="urlocal logo: a generated image of a local pub, as one might find in Europe" align="right" width="25%" src="https://raw.githubusercontent.com/pmonks/urlocal/release/urlocal-logo.png">
 
 # urlocal
+
+[![CI](https://github.com/pmonks/urlocal/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/urlocal/actions?query=workflow%3ACI+branch%3Adev)
+[![Dependencies](https://github.com/pmonks/urlocal/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/urlocal/actions?query=workflow%3Adependencies+branch%3Adev)
+[![Vulnerabilities](https://github.com/pmonks/urlocal/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://github.com/pmonks/urlocal/actions?query=workflow%3Avulnerabilities+branch%3Adev) |
+<br/>
+[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/urlocal)](https://clojars.org/com.github.pmonks/urlocal/)
+[![Open Issues](https://img.shields.io/github/issues/pmonks/urlocal.svg)](https://github.com/pmonks/urlocal/issues)
+[![License](https://img.shields.io/github/license/pmonks/urlocal.svg)](https://github.com/pmonks/urlocal/blob/release/LICENSE)
+![Maintained](https://badges.ws/badge/?label=maintained&value=yes,+at+author's+discretion)
 
 A Clojure micro-library for cached (ETag based) URL downloads.  At its core, this library provides a single fn (`urlocal.api/input-stream`) for reading the content of a URL, and will transparently cache downloaded content locally on disk (as per the [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)), serving subsequent requests for that same content out of that cache whenever possible.  Because this content is persisted on disk, the cache survives restarts of the JVM.
 
