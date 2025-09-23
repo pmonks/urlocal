@@ -1,75 +1,76 @@
 Downloading: nvd-clojure/nvd-clojure/maven-metadata.xml from clojars
-[2025-09-16 02:56:14.634] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "urlocal", :version "1.0.74-SNAPSHOT", :nvd {:output-dir "../target/nvd"}}
-Sep 16, 2025 2:56:14 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+[2025-09-23 02:58:04.787] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "urlocal", :version "1.0.74-SNAPSHOT", :nvd {:output-dir "../target/nvd"}}
+Sep 23, 2025 2:58:05 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: Instance is null, returning unconfigured instance
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: Setting default auxiliaries to "ODC"
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: setting defaultCompositeCacheAttributes to [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
-INFO: setting defaultElementAttributes to [ IS_LATERAL = false, IS_SPOOL = true, IS_REMOTE = false, IS_ETERNAL = false, MaxLifeSeconds = 86400, IdleTime = 1800, CreateTime = 1757991376337, LastAccessTime = 1757991376337, getTimeToLiveSeconds() = 86399, createTime = 1757991376337 ]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+INFO: setting defaultElementAttributes to [ IS_LATERAL = false, IS_SPOOL = true, IS_REMOTE = false, IS_ETERNAL = false, MaxLifeSeconds = 86400, IdleTime = 1800, CreateTime = 1758596286631, LastAccessTime = 1758596286631, getTimeToLiveSeconds() = 86399, createTime = 1758596286631 ]
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for CENTRAL
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [CENTRAL] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@5edc3e29] for auxiliary [jcs.auxiliary.ODC]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Set maxKeySize to: "1,000,000"
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/12.1.3/data/11.0/cache
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Indexed Disk Cache is alive.
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for POM
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [POM] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@5db948c9] for auxiliary [jcs.auxiliary.ODC]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Set maxKeySize to: "1,000,000"
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/12.1.3/data/11.0/cache
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Indexed Disk Cache is alive.
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for NODEAUDIT
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [NODEAUDIT] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@296edc75] for auxiliary [jcs.auxiliary.ODC]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Set maxKeySize to: "1,000,000"
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/12.1.3/data/11.0/cache
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Indexed Disk Cache is alive.
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.control.CompositeCacheConfigurator 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.control.CompositeCacheConfigurator 
 INFO: Parsed regions [CENTRAL, POM, NODEAUDIT]
-Sep 16, 2025 2:56:16 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
-INFO: Finished configuration in 266 ms.
-[2025-09-16 02:56:16.422] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
-[2025-09-16 02:56:17.170] INFO Engine - Checking for updates
-[2025-09-16 02:56:19.523] INFO NvdApiDataSource - NVD API has 11,362 records in this update
-[2025-09-16 02:56:24.323] INFO NvdApiDataSource - Downloaded 10,000/11,362 (88%)
-[2025-09-16 02:56:28.073] INFO NvdApiDataSource - Downloaded 11,362/11,362 (100%)
-[2025-09-16 02:56:28.073] INFO NvdApiDataSource - Completed processing batch 1/6 (17%) in 5,757ms
-[2025-09-16 02:56:28.073] INFO NvdApiDataSource - Completed processing batch 2/6 (33%) in 3,212ms
-[2025-09-16 02:56:28.074] INFO NvdApiDataSource - Completed processing batch 3/6 (50%) in 2,399ms
-[2025-09-16 02:56:28.074] INFO NvdApiDataSource - Completed processing batch 4/6 (67%) in 1,644ms
-[2025-09-16 02:56:28.074] INFO NvdApiDataSource - Completed processing batch 5/6 (83%) in 2,304ms
-[2025-09-16 02:56:28.307] INFO NvdApiDataSource - Completed processing batch 6/6 (100%) in 261ms
-[2025-09-16 02:56:28.485] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
-[2025-09-16 02:56:28.761] INFO CveDB - Begin database defrag
-[2025-09-16 02:56:34.149] INFO CveDB - End database defrag (5392 ms)
-[2025-09-16 02:56:34.151] INFO Engine - Check for updates complete (16981 ms)
-[2025-09-16 02:56:34.345] INFO Engine - 
+Sep 23, 2025 2:58:06 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+INFO: Finished configuration in 249 ms.
+[2025-09-23 02:58:06.696] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
+[2025-09-23 02:58:07.656] INFO Engine - Checking for updates
+[2025-09-23 02:58:10.409] INFO NvdApiDataSource - NVD API has 13,461 records in this update
+[2025-09-23 02:58:15.502] INFO NvdApiDataSource - Downloaded 10,000/13,461 (74%)
+[2025-09-23 02:58:19.685] INFO NvdApiDataSource - Downloaded 13,461/13,461 (100%)
+[2025-09-23 02:58:19.685] INFO NvdApiDataSource - Completed processing batch 1/7 (14%) in 5,369ms
+[2025-09-23 02:58:19.685] INFO NvdApiDataSource - Completed processing batch 2/7 (29%) in 3,914ms
+[2025-09-23 02:58:19.685] INFO NvdApiDataSource - Completed processing batch 3/7 (43%) in 2,012ms
+[2025-09-23 02:58:19.685] INFO NvdApiDataSource - Completed processing batch 4/7 (57%) in 1,807ms
+[2025-09-23 02:58:19.685] INFO NvdApiDataSource - Completed processing batch 5/7 (71%) in 2,372ms
+[2025-09-23 02:58:19.685] INFO NvdApiDataSource - Completed processing batch 6/7 (86%) in 237ms
+[2025-09-23 02:58:20.082] INFO NvdApiDataSource - Completed processing batch 7/7 (100%) in 427ms
+[2025-09-23 02:58:20.337] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+[2025-09-23 02:58:20.688] INFO CveDB - Begin database defrag
+[2025-09-23 02:58:25.662] INFO CveDB - End database defrag (4977 ms)
+[2025-09-23 02:58:25.664] INFO Engine - Check for updates complete (18007 ms)
+[2025-09-23 02:58:25.887] INFO Engine - 
 
 Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.
 
@@ -80,45 +81,388 @@ Dependency-Check is an open source tool performing a best effort analysis of 3rd
 💖 Sponsor: https://github.com/sponsors/jeremylong
 
 
-[2025-09-16 02:56:34.345] INFO Engine - Analysis Started
-[2025-09-16 02:56:34.532] INFO Engine - Finished Archive Analyzer (0 seconds)
-[2025-09-16 02:56:34.540] INFO Engine - Finished File Name Analyzer (0 seconds)
-[2025-09-16 02:56:35.021] INFO Engine - Finished Jar Analyzer (0 seconds)
-[2025-09-16 02:56:35.032] INFO Engine - Finished Central Analyzer (0 seconds)
-[2025-09-16 02:56:35.033] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
-[2025-09-16 02:56:35.468] INFO Engine - Finished Hint Analyzer (0 seconds)
-[2025-09-16 02:56:35.470] INFO Engine - Finished Version Filter Analyzer (0 seconds)
+[2025-09-23 02:58:25.888] INFO Engine - Analysis Started
+[2025-09-23 02:58:26.057] INFO Engine - Finished Archive Analyzer (0 seconds)
+[2025-09-23 02:58:26.063] INFO Engine - Finished File Name Analyzer (0 seconds)
+[2025-09-23 02:58:26.597] INFO Engine - Finished Jar Analyzer (0 seconds)
+[2025-09-23 02:58:26.610] INFO Engine - Finished Central Analyzer (0 seconds)
+[2025-09-23 02:58:26.611] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
+[2025-09-23 02:58:27.204] INFO Engine - Finished Hint Analyzer (0 seconds)
+[2025-09-23 02:58:27.207] INFO Engine - Finished Version Filter Analyzer (0 seconds)
 WARNING: A restricted method in java.lang.foreign.Linker has been called
 WARNING: java.lang.foreign.Linker::downcallHandle has been called by the unnamed module
 WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for this module
 
-Sep 16, 2025 2:56:36 AM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+Sep 23, 2025 2:58:28 AM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
 INFO: Using MemorySegmentIndexInput and native madvise support with Java 21 or later; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
-Sep 16, 2025 2:56:36 AM org.apache.lucene.internal.vectorization.VectorizationProvider lookup
+Sep 23, 2025 2:58:28 AM org.apache.lucene.internal.vectorization.VectorizationProvider lookup
 WARNING: Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
-[2025-09-16 02:56:38.317] INFO CPEAnalyzer - Created CPE Index (2 seconds)
-[2025-09-16 02:56:38.740] INFO Engine - Finished CPE Analyzer (3 seconds)
-[2025-09-16 02:56:38.743] INFO Engine - Finished False Positive Analyzer (0 seconds)
-[2025-09-16 02:56:38.752] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
-[2025-09-16 02:56:39.148] INFO Engine - Finished Sonatype OSS Index Analyzer (0 seconds)
-[2025-09-16 02:56:39.149] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
-[2025-09-16 02:56:39.162] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
-[2025-09-16 02:56:39.163] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
-[2025-09-16 02:56:39.164] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
-[2025-09-16 02:56:39.186] INFO Engine - Analysis Complete (4 seconds)
-[2025-09-16 02:56:39.230] INFO ReportGenerator - Writing XML report to: /home/runner/work/urlocal/urlocal/.nvd/../target/nvd/dependency-check-report.xml
-[2025-09-16 02:56:39.358] INFO ReportGenerator - Writing HTML report to: /home/runner/work/urlocal/urlocal/.nvd/../target/nvd/dependency-check-report.html
-[2025-09-16 02:56:39.432] INFO ReportGenerator - Writing JSON report to: /home/runner/work/urlocal/urlocal/.nvd/../target/nvd/dependency-check-report.json
-[2025-09-16 02:56:39.461] INFO ReportGenerator - Writing CSV report to: /home/runner/work/urlocal/urlocal/.nvd/../target/nvd/dependency-check-report.csv
-[2025-09-16 02:56:39.464] INFO ReportGenerator - Writing SARIF report to: /home/runner/work/urlocal/urlocal/.nvd/../target/nvd/dependency-check-report.sarif
-[2025-09-16 02:56:39.473] INFO ReportGenerator - Writing JENKINS report to: /home/runner/work/urlocal/urlocal/.nvd/../target/nvd/dependency-check-jenkins.html
-[2025-09-16 02:56:39.489] INFO ReportGenerator - Writing JUNIT report to: /home/runner/work/urlocal/urlocal/.nvd/../target/nvd/dependency-check-junit.xml
-[2025-09-16 02:56:39.498] INFO ReportGenerator - Writing GITLAB report to: /home/runner/work/urlocal/urlocal/.nvd/../target/nvd/dependency-check-gitlab.json
-Sep 16, 2025 2:56:39 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
-INFO: Shutdown hook activated. Shutdown was not called. Shutting down JCS.
-Sep 16, 2025 2:56:39 AM org.apache.commons.jcs3.engine.control.event.ElementEventQueue 
-INFO: Element event queue destroyed: org.apache.commons.jcs3.engine.control.event.ElementEventQueue@6707e1ed
-Sep 16, 2025 2:56:39 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+[2025-09-23 02:58:30.415] INFO CPEAnalyzer - Created CPE Index (3 seconds)
+[2025-09-23 02:58:30.849] INFO Engine - Finished CPE Analyzer (3 seconds)
+[2025-09-23 02:58:30.852] INFO Engine - Finished False Positive Analyzer (0 seconds)
+[2025-09-23 02:58:30.863] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
+[2025-09-23 02:58:31.291] WARN AnalysisTask - An error occurred while analyzing '/home/runner/.m2/repository/org/clojure/tools.logging/1.3.0/tools.logging-1.3.0.jar' (Sonatype OSS Index Analyzer): Failed to request component-reports
+[2025-09-23 02:58:31.349] WARN AnalysisTask - An error occurred while analyzing '/home/runner/.m2/repository/org/clojure/spec.alpha/0.5.238/spec.alpha-0.5.238.jar' (Sonatype OSS Index Analyzer): Failed to request component-reports
+[2025-09-23 02:58:31.409] WARN AnalysisTask - An error occurred while analyzing '/home/runner/.m2/repository/org/clojure/core.specs.alpha/0.4.74/core.specs.alpha-0.4.74.jar' (Sonatype OSS Index Analyzer): Failed to request component-reports
+[2025-09-23 02:58:31.468] WARN AnalysisTask - An error occurred while analyzing '/home/runner/.m2/repository/org/clojure/clojure/1.12.2/clojure-1.12.2.jar' (Sonatype OSS Index Analyzer): Failed to request component-reports
+[2025-09-23 02:58:31.468] INFO Engine - Finished Sonatype OSS Index Analyzer (0 seconds)
+[2025-09-23 02:58:31.469] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
+[2025-09-23 02:58:31.480] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
+[2025-09-23 02:58:31.480] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
+[2025-09-23 02:58:31.481] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
+[2025-09-23 02:58:31.505] INFO Engine - Analysis Complete (5 seconds)
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.event.ElementEventQueue 
+INFO: Element event queue destroyed: org.apache.commons.jcs3.engine.control.event.ElementEventQueue@18ff1520
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: In DISPOSE, [NODEAUDIT] fromRemote [false]
-Sep 16, 2025 2:56:39 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: In DISPOSE, [NODEAUDIT] auxiliary [NODEAUDIT]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [NODEAUDIT] put 0 into auxiliary [NODEAUDIT]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.PooledCacheEventQueue 
+INFO: Cache event queue destroyed: CacheEventQueue [listenerId=1954629845, cacheName=NODEAUDIT]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [NODEAUDIT] : Saving keys to: NODEAUDIT, key count: 0
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [NODEAUDIT] : Finished saving keys.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [NODEAUDIT] : Shutdown complete.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [NODEAUDIT] disposing of memory cache.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.memory.AbstractMemoryCache 
+INFO: Memory Cache dispose called.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [CENTRAL] fromRemote [false]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [CENTRAL] auxiliary [CENTRAL]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [CENTRAL] put 0 into auxiliary [CENTRAL]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.PooledCacheEventQueue 
+INFO: Cache event queue destroyed: CacheEventQueue [listenerId=1954629845, cacheName=CENTRAL]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [CENTRAL] : Saving keys to: CENTRAL, key count: 0
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [CENTRAL] : Finished saving keys.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [CENTRAL] : Shutdown complete.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [CENTRAL] disposing of memory cache.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.memory.AbstractMemoryCache 
+INFO: Memory Cache dispose called.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [POM] fromRemote [false]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [POM] auxiliary [POM]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [POM] put 0 into auxiliary [POM]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.PooledCacheEventQueue 
+INFO: Cache event queue destroyed: CacheEventQueue [listenerId=1954629845, cacheName=POM]
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [POM] : Saving keys to: POM, key count: 0
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [POM] : Finished saving keys.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [POM] : Shutdown complete.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [POM] disposing of memory cache.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.engine.memory.AbstractMemoryCache 
+INFO: Memory Cache dispose called.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+SEVERE: Region [NODEAUDIT] : Not alive and dispose was called, filename: NODEAUDIT
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+SEVERE: Region [CENTRAL] : Not alive and dispose was called, filename: CENTRAL
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Sep 23, 2025 2:58:31 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+SEVERE: Region [POM] : Not alive and dispose was called, filename: POM
+{:clojure.main/message
+ "Execution error (ExceptionInfo) at nvd.task.check/scan-and-analyze$fn (check.clj:57).\norg.owasp.dependencycheck.exception.ExceptionCollection\n",
+ :clojure.main/triage
+ {:clojure.error/class clojure.lang.ExceptionInfo,
+  :clojure.error/line 57,
+  :clojure.error/cause
+  "org.owasp.dependencycheck.exception.ExceptionCollection",
+  :clojure.error/symbol nvd.task.check/scan-and-analyze$fn,
+  :clojure.error/source "check.clj",
+  :clojure.error/phase :execution},
+ :clojure.main/trace
+ {:via
+  [{:type clojure.lang.ExceptionInfo,
+    :message "org.owasp.dependencycheck.exception.ExceptionCollection",
+    :data {:exceptions [#error {
+ :cause "status code: 401, reason phrase: Unauthorized"
+ :via
+ [{:type org.owasp.dependencycheck.analyzer.exception.AnalysisException
+   :message "Failed to request component-reports"
+   :at [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 170]}
+  {:type org.owasp.dependencycheck.utils.DownloadFailedException
+   :message "https://ossindex.sonatype.org/api/v3/component-report - Server status: 401 - Server reason: Unauthorized"
+   :at [org.owasp.dependencycheck.utils.Downloader wrapAndThrowHttpResponseException "Downloader.java" 438]}
+  {:type org.apache.hc.client5.http.HttpResponseException
+   :message "status code: 401, reason phrase: Unauthorized"
+   :at [org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]}]
+ :trace
+ [[org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 72]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 55]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 247]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 188]
+  [org.owasp.dependencycheck.utils.Downloader postBasedFetchContent "Downloader.java" 544]
+  [org.owasp.dependencycheck.data.ossindex.ODCConnectionTransport post "ODCConnectionTransport.java" 82]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl doRequestComponentReports "OssindexClientImpl.java" 204]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl requestComponentReports "OssindexClientImpl.java" 170]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer requestReports "OssIndexAnalyzer.java" 230]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 136]
+  [org.owasp.dependencycheck.analyzer.AbstractAnalyzer analyze "AbstractAnalyzer.java" 131]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 88]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 37]
+  [java.util.concurrent.FutureTask run "FutureTask.java" 317]
+  [java.util.concurrent.ThreadPoolExecutor runWorker "ThreadPoolExecutor.java" 1144]
+  [java.util.concurrent.ThreadPoolExecutor$Worker run "ThreadPoolExecutor.java" 642]
+  [java.lang.Thread run "Thread.java" 1583]]} #error {
+ :cause "status code: 401, reason phrase: Unauthorized"
+ :via
+ [{:type org.owasp.dependencycheck.analyzer.exception.AnalysisException
+   :message "Failed to request component-reports"
+   :at [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 170]}
+  {:type org.owasp.dependencycheck.utils.DownloadFailedException
+   :message "https://ossindex.sonatype.org/api/v3/component-report - Server status: 401 - Server reason: Unauthorized"
+   :at [org.owasp.dependencycheck.utils.Downloader wrapAndThrowHttpResponseException "Downloader.java" 438]}
+  {:type org.apache.hc.client5.http.HttpResponseException
+   :message "status code: 401, reason phrase: Unauthorized"
+   :at [org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]}]
+ :trace
+ [[org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 72]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 55]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 247]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 188]
+  [org.owasp.dependencycheck.utils.Downloader postBasedFetchContent "Downloader.java" 544]
+  [org.owasp.dependencycheck.data.ossindex.ODCConnectionTransport post "ODCConnectionTransport.java" 82]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl doRequestComponentReports "OssindexClientImpl.java" 204]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl requestComponentReports "OssindexClientImpl.java" 170]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer requestReports "OssIndexAnalyzer.java" 230]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 136]
+  [org.owasp.dependencycheck.analyzer.AbstractAnalyzer analyze "AbstractAnalyzer.java" 131]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 88]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 37]
+  [java.util.concurrent.FutureTask run "FutureTask.java" 317]
+  [java.util.concurrent.ThreadPoolExecutor runWorker "ThreadPoolExecutor.java" 1144]
+  [java.util.concurrent.ThreadPoolExecutor$Worker run "ThreadPoolExecutor.java" 642]
+  [java.lang.Thread run "Thread.java" 1583]]} #error {
+ :cause "status code: 401, reason phrase: Unauthorized"
+ :via
+ [{:type org.owasp.dependencycheck.analyzer.exception.AnalysisException
+   :message "Failed to request component-reports"
+   :at [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 170]}
+  {:type org.owasp.dependencycheck.utils.DownloadFailedException
+   :message "https://ossindex.sonatype.org/api/v3/component-report - Server status: 401 - Server reason: Unauthorized"
+   :at [org.owasp.dependencycheck.utils.Downloader wrapAndThrowHttpResponseException "Downloader.java" 438]}
+  {:type org.apache.hc.client5.http.HttpResponseException
+   :message "status code: 401, reason phrase: Unauthorized"
+   :at [org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]}]
+ :trace
+ [[org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 72]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 55]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 247]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 188]
+  [org.owasp.dependencycheck.utils.Downloader postBasedFetchContent "Downloader.java" 544]
+  [org.owasp.dependencycheck.data.ossindex.ODCConnectionTransport post "ODCConnectionTransport.java" 82]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl doRequestComponentReports "OssindexClientImpl.java" 204]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl requestComponentReports "OssindexClientImpl.java" 170]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer requestReports "OssIndexAnalyzer.java" 230]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 136]
+  [org.owasp.dependencycheck.analyzer.AbstractAnalyzer analyze "AbstractAnalyzer.java" 131]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 88]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 37]
+  [java.util.concurrent.FutureTask run "FutureTask.java" 317]
+  [java.util.concurrent.ThreadPoolExecutor runWorker "ThreadPoolExecutor.java" 1144]
+  [java.util.concurrent.ThreadPoolExecutor$Worker run "ThreadPoolExecutor.java" 642]
+  [java.lang.Thread run "Thread.java" 1583]]} #error {
+ :cause "status code: 401, reason phrase: Unauthorized"
+ :via
+ [{:type org.owasp.dependencycheck.analyzer.exception.AnalysisException
+   :message "Failed to request component-reports"
+   :at [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 170]}
+  {:type org.owasp.dependencycheck.utils.DownloadFailedException
+   :message "https://ossindex.sonatype.org/api/v3/component-report - Server status: 401 - Server reason: Unauthorized"
+   :at [org.owasp.dependencycheck.utils.Downloader wrapAndThrowHttpResponseException "Downloader.java" 438]}
+  {:type org.apache.hc.client5.http.HttpResponseException
+   :message "status code: 401, reason phrase: Unauthorized"
+   :at [org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]}]
+ :trace
+ [[org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 72]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 55]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 247]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 188]
+  [org.owasp.dependencycheck.utils.Downloader postBasedFetchContent "Downloader.java" 544]
+  [org.owasp.dependencycheck.data.ossindex.ODCConnectionTransport post "ODCConnectionTransport.java" 82]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl doRequestComponentReports "OssindexClientImpl.java" 204]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl requestComponentReports "OssindexClientImpl.java" 170]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer requestReports "OssIndexAnalyzer.java" 230]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 136]
+  [org.owasp.dependencycheck.analyzer.AbstractAnalyzer analyze "AbstractAnalyzer.java" 131]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 88]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 37]
+  [java.util.concurrent.FutureTask run "FutureTask.java" 317]
+  [java.util.concurrent.ThreadPoolExecutor runWorker "ThreadPoolExecutor.java" 1144]
+  [java.util.concurrent.ThreadPoolExecutor$Worker run "ThreadPoolExecutor.java" 642]
+  [java.lang.Thread run "Thread.java" 1583]]}]},
+    :at
+    [nvd.task.check$scan_and_analyze$fn__775 invoke "check.clj" 57]}],
+  :trace
+  [[nvd.task.check$scan_and_analyze$fn__775 invoke "check.clj" 57]
+   [nvd.task.check$scan_and_analyze invokeStatic "check.clj" 51]
+   [nvd.task.check$scan_and_analyze invoke "check.clj" 46]
+   [nvd.task.check$impl invokeStatic "check.clj" 89]
+   [nvd.task.check$impl invoke "check.clj" 81]
+   [nvd.task.check$_main invokeStatic "check.clj" 148]
+   [nvd.task.check$_main doInvoke "check.clj" 100]
+   [clojure.lang.RestFn applyTo "RestFn.java" 140]
+   [clojure.lang.Var applyTo "Var.java" 707]
+   [clojure.core$apply invokeStatic "core.clj" 667]
+   [clojure.main$main_opt invokeStatic "main.clj" 515]
+   [clojure.main$main_opt invoke "main.clj" 511]
+   [clojure.main$main invokeStatic "main.clj" 665]
+   [clojure.main$main doInvoke "main.clj" 617]
+   [clojure.lang.RestFn applyTo "RestFn.java" 140]
+   [clojure.lang.Var applyTo "Var.java" 707]
+   [clojure.main main "main.java" 40]],
+  :cause "org.owasp.dependencycheck.exception.ExceptionCollection",
+  :data {:exceptions [#error {
+ :cause "status code: 401, reason phrase: Unauthorized"
+ :via
+ [{:type org.owasp.dependencycheck.analyzer.exception.AnalysisException
+   :message "Failed to request component-reports"
+   :at [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 170]}
+  {:type org.owasp.dependencycheck.utils.DownloadFailedException
+   :message "https://ossindex.sonatype.org/api/v3/component-report - Server status: 401 - Server reason: Unauthorized"
+   :at [org.owasp.dependencycheck.utils.Downloader wrapAndThrowHttpResponseException "Downloader.java" 438]}
+  {:type org.apache.hc.client5.http.HttpResponseException
+   :message "status code: 401, reason phrase: Unauthorized"
+   :at [org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]}]
+ :trace
+ [[org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 72]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 55]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 247]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 188]
+  [org.owasp.dependencycheck.utils.Downloader postBasedFetchContent "Downloader.java" 544]
+  [org.owasp.dependencycheck.data.ossindex.ODCConnectionTransport post "ODCConnectionTransport.java" 82]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl doRequestComponentReports "OssindexClientImpl.java" 204]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl requestComponentReports "OssindexClientImpl.java" 170]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer requestReports "OssIndexAnalyzer.java" 230]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 136]
+  [org.owasp.dependencycheck.analyzer.AbstractAnalyzer analyze "AbstractAnalyzer.java" 131]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 88]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 37]
+  [java.util.concurrent.FutureTask run "FutureTask.java" 317]
+  [java.util.concurrent.ThreadPoolExecutor runWorker "ThreadPoolExecutor.java" 1144]
+  [java.util.concurrent.ThreadPoolExecutor$Worker run "ThreadPoolExecutor.java" 642]
+  [java.lang.Thread run "Thread.java" 1583]]} #error {
+ :cause "status code: 401, reason phrase: Unauthorized"
+ :via
+ [{:type org.owasp.dependencycheck.analyzer.exception.AnalysisException
+   :message "Failed to request component-reports"
+   :at [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 170]}
+  {:type org.owasp.dependencycheck.utils.DownloadFailedException
+   :message "https://ossindex.sonatype.org/api/v3/component-report - Server status: 401 - Server reason: Unauthorized"
+   :at [org.owasp.dependencycheck.utils.Downloader wrapAndThrowHttpResponseException "Downloader.java" 438]}
+  {:type org.apache.hc.client5.http.HttpResponseException
+   :message "status code: 401, reason phrase: Unauthorized"
+   :at [org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]}]
+ :trace
+ [[org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 72]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 55]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 247]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 188]
+  [org.owasp.dependencycheck.utils.Downloader postBasedFetchContent "Downloader.java" 544]
+  [org.owasp.dependencycheck.data.ossindex.ODCConnectionTransport post "ODCConnectionTransport.java" 82]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl doRequestComponentReports "OssindexClientImpl.java" 204]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl requestComponentReports "OssindexClientImpl.java" 170]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer requestReports "OssIndexAnalyzer.java" 230]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 136]
+  [org.owasp.dependencycheck.analyzer.AbstractAnalyzer analyze "AbstractAnalyzer.java" 131]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 88]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 37]
+  [java.util.concurrent.FutureTask run "FutureTask.java" 317]
+  [java.util.concurrent.ThreadPoolExecutor runWorker "ThreadPoolExecutor.java" 1144]
+  [java.util.concurrent.ThreadPoolExecutor$Worker run "ThreadPoolExecutor.java" 642]
+  [java.lang.Thread run "Thread.java" 1583]]} #error {
+ :cause "status code: 401, reason phrase: Unauthorized"
+ :via
+ [{:type org.owasp.dependencycheck.analyzer.exception.AnalysisException
+   :message "Failed to request component-reports"
+   :at [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 170]}
+  {:type org.owasp.dependencycheck.utils.DownloadFailedException
+   :message "https://ossindex.sonatype.org/api/v3/component-report - Server status: 401 - Server reason: Unauthorized"
+   :at [org.owasp.dependencycheck.utils.Downloader wrapAndThrowHttpResponseException "Downloader.java" 438]}
+  {:type org.apache.hc.client5.http.HttpResponseException
+   :message "status code: 401, reason phrase: Unauthorized"
+   :at [org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]}]
+ :trace
+ [[org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 72]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 55]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 247]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 188]
+  [org.owasp.dependencycheck.utils.Downloader postBasedFetchContent "Downloader.java" 544]
+  [org.owasp.dependencycheck.data.ossindex.ODCConnectionTransport post "ODCConnectionTransport.java" 82]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl doRequestComponentReports "OssindexClientImpl.java" 204]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl requestComponentReports "OssindexClientImpl.java" 170]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer requestReports "OssIndexAnalyzer.java" 230]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 136]
+  [org.owasp.dependencycheck.analyzer.AbstractAnalyzer analyze "AbstractAnalyzer.java" 131]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 88]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 37]
+  [java.util.concurrent.FutureTask run "FutureTask.java" 317]
+  [java.util.concurrent.ThreadPoolExecutor runWorker "ThreadPoolExecutor.java" 1144]
+  [java.util.concurrent.ThreadPoolExecutor$Worker run "ThreadPoolExecutor.java" 642]
+  [java.lang.Thread run "Thread.java" 1583]]} #error {
+ :cause "status code: 401, reason phrase: Unauthorized"
+ :via
+ [{:type org.owasp.dependencycheck.analyzer.exception.AnalysisException
+   :message "Failed to request component-reports"
+   :at [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 170]}
+  {:type org.owasp.dependencycheck.utils.DownloadFailedException
+   :message "https://ossindex.sonatype.org/api/v3/component-report - Server status: 401 - Server reason: Unauthorized"
+   :at [org.owasp.dependencycheck.utils.Downloader wrapAndThrowHttpResponseException "Downloader.java" 438]}
+  {:type org.apache.hc.client5.http.HttpResponseException
+   :message "status code: 401, reason phrase: Unauthorized"
+   :at [org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]}]
+ :trace
+ [[org.apache.hc.client5.http.impl.classic.AbstractHttpClientResponseHandler handleResponse "AbstractHttpClientResponseHandler.java" 69]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 72]
+  [org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler handleResponse "BasicHttpClientResponseHandler.java" 55]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 247]
+  [org.apache.hc.client5.http.impl.classic.CloseableHttpClient execute "CloseableHttpClient.java" 188]
+  [org.owasp.dependencycheck.utils.Downloader postBasedFetchContent "Downloader.java" 544]
+  [org.owasp.dependencycheck.data.ossindex.ODCConnectionTransport post "ODCConnectionTransport.java" 82]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl doRequestComponentReports "OssindexClientImpl.java" 204]
+  [org.sonatype.ossindex.service.client.internal.OssindexClientImpl requestComponentReports "OssindexClientImpl.java" 170]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer requestReports "OssIndexAnalyzer.java" 230]
+  [org.owasp.dependencycheck.analyzer.OssIndexAnalyzer analyzeDependency "OssIndexAnalyzer.java" 136]
+  [org.owasp.dependencycheck.analyzer.AbstractAnalyzer analyze "AbstractAnalyzer.java" 131]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 88]
+  [org.owasp.dependencycheck.AnalysisTask call "AnalysisTask.java" 37]
+  [java.util.concurrent.FutureTask run "FutureTask.java" 317]
+  [java.util.concurrent.ThreadPoolExecutor runWorker "ThreadPoolExecutor.java" 1144]
+  [java.util.concurrent.ThreadPoolExecutor$Worker run "ThreadPoolExecutor.java" 642]
+  [java.lang.Thread run "Thread.java" 1583]]}]}}}
+
+Execution error (ExceptionInfo) at nvd.task.check/scan-and-analyze$fn (check.clj:57).
+org.owasp.dependencycheck.exception.ExceptionCollection
+
