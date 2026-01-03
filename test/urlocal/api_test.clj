@@ -75,13 +75,18 @@
     (is (valid-cached-response? "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt" (test-is "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt")))
     (is (valid-cached-response? "https://creativecommons.org/licenses/by-nd/4.0/legalcode.txt"    (test-is "https://creativecommons.org/licenses/by-nd/4.0/legalcode.txt")))
     (is (valid-cached-response? "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt" (test-is "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt")))
-    ; Note: URLs don't match because this is a redirect 
+    ; Note: URLs don't match because this is a redirect
     (is (valid-cached-response? "https://www.wtfpl.net/txt/copying/"                              (test-is "http://www.wtfpl.net/txt/copying/")))
     (is (valid-cached-response? "https://www.mozilla.org/media/MPL/2.0/index.txt"                 (test-is "https://www.mozilla.org/media/MPL/2.0/index.txt")))
     (is (valid-cached-response? "https://mit-license.org/license.txt"                             (test-is "https://mit-license.org/license.txt"))))
-  (testing "Redirected requests"
-    ; Note difference between URLs
-    (is (valid-cached-response? "https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" (test-is "https://www.gnu.org/licenses/gpl-2.0.txt" {:follow-redirects? true}))))
-  (testing "Throttled requests"
-    ; At times, gnu.org has throttled requests for license texts. Sadly this behaviour seems to change randomly, so this unit test is not guaranteed to actually test throttling behaviour at all times.
-    (is (valid-cached-response? "https://www.gnu.org/licenses/gpl-3.0.txt" (test-is "https://www.gnu.org/licenses/gpl-3.0.txt" {:retry-when-throttled? true})))))
+
+; NOTE: The FSF seems to have trouble operating an error free website, so these URLs are just not reliable enough for testing.
+
+;  (testing "Redirected requests"
+;    ; Note difference between URLs
+;    (is (valid-cached-response? "https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt" (test-is "https://www.gnu.org/licenses/gpl-2.0.txt" {:follow-redirects? true}))))
+;  (testing "Throttled requests"
+;    ; At times, gnu.org has throttled requests for license texts. Sadly this behaviour seems to change randomly, so this unit test is not guaranteed to actually test throttling behaviour at all times.
+;    (is (valid-cached-response? "https://www.gnu.org/licenses/gpl-3.0.txt" (test-is "https://www.gnu.org/licenses/gpl-3.0.txt" {:retry-when-throttled? true})))))
+
+)
