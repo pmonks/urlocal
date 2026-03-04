@@ -23,6 +23,10 @@ While ETag-based caching logic is simple, well understood, and widely documented
 
 `urlocal` is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/urlocal).
 
+### API Documentation
+
+[API documentation is available here](https://pmonks.github.io/urlocal/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/urlocal/).  I'm also active on [the Clojure Discord server](https://discord.gg/discljord) if you'd like to chat.
+
 ### Trying it Out
 
 #### Clojure CLI
@@ -69,10 +73,6 @@ $ deps-try com.github.pmonks/urlocal
 ;=> "Elapsed time: 1.294875 msecs"
 ;=> #object[java.io.BufferedInputStream 0x161dd92a "java.io.BufferedInputStream@161dd92a"]
 ```
-
-### API Documentation
-
-[API documentation is available here](https://pmonks.github.io/urlocal/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/urlocal/).
 
 ## Contributor Information
 

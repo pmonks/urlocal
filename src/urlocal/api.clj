@@ -10,10 +10,25 @@
 
 (ns urlocal.api
   "The public API of the urlocal library."
-  (:require [clojure.string     :as s]
-            [clojure.java.io    :as io]
-            [urlocal.impl.xdg   :as xdg]
-            [urlocal.impl.cache :as uic]))
+  (:require [clojure.string       :as s]
+            [clojure.java.io      :as io]
+            [urlocal.impl.xdg     :as xdg]
+            [urlocal.impl.cache   :as uic]
+            [urlocal.impl.locking :as lck]))
+
+(defn- normalise-url
+  "Normalises `url`, returning a `java.net.URI` instance.  Throws if `url`
+  cannot be used to construct a valid `java.net.URI`."
+  [url]
+  (when url
+    (let [normalised-uri (.normalize (java.net.URI. url))]
+      (java.net.URI. (.getScheme   normalised-uri)
+                     (.getUserInfo normalised-uri)
+                     (.getHost     normalised-uri)
+                     (.getPort     normalised-uri)
+                     (.getPath     normalised-uri)
+                     (.getQuery    normalised-uri)
+                     nil))))  ; Strip fragment - for some reason java.net.URI.normalize() doesn't do that
 
 #_{:clj-kondo/ignore [:unused-binding {:exclude-destructured-keys-in-fn-args true}]}
 (defn input-stream
@@ -56,8 +71,9 @@
          :as   opts}]
    (when-let [u (io/as-url url)]
      (when (s/starts-with? (s/lower-case (.getProtocol u)) "http")
-      (let [cached-url (uic/prep-cache! u opts)]  ; Make sure we use the url returned by prep-cache, so that redirects are taken into account
-        (io/input-stream (uic/url->content-file cached-url)))))))
+       (lck/locking-by-value (normalise-url url)     ; Prevent cache stampedes
+         (let [cached-url (uic/prep-cache! u opts)]  ; Make sure we use the url returned by prep-cache, so that redirects are taken into account
+           (io/input-stream (uic/url->content-file cached-url))))))))
 
 (defn cache-dir
   "Returns the current cache directory as a `java.io.File`."

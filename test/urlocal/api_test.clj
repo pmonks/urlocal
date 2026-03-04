@@ -90,3 +90,11 @@
 ;    (is (valid-cached-response? "https://www.gnu.org/licenses/gpl-3.0.txt" (test-is "https://www.gnu.org/licenses/gpl-3.0.txt" {:retry-when-throttled? true})))))
 
 )
+
+; This can only be verified by looking at the log, which should contain a single cache miss, followed by 99 hits
+(deftest cache-stampede-tests
+  (testing "Cache stampede is prevented"
+    (let [futures (map (fn [_] (future (let [url "https://raw.githubusercontent.com/pmonks/urlocal/refs/heads/dev/deps.edn"]
+                                         (is (valid-cached-response? url (test-is url))))))
+                       (range 100))]
+      (run! deref futures))))

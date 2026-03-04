@@ -92,7 +92,7 @@
 
 (defmethod seconds-since java.time.Instant
   [^java.time.Instant inst]
-  (.between (java.time.temporal.ChronoUnit/SECONDS) inst (java.time.Instant/now)))
+  (.between java.time.temporal.ChronoUnit/SECONDS inst (java.time.Instant/now)))
 
 (defmethod seconds-since java.util.Date
   [^java.util.Date d]
