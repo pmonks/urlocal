@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/pmonks/urlocal/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/urlocal/actions?query=workflow%3ACI+branch%3Adev)
 [![Dependencies](https://github.com/pmonks/urlocal/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/urlocal/actions?query=workflow%3Adependencies+branch%3Adev)
-[![Vulnerabilities](https://github.com/pmonks/urlocal/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://github.com/pmonks/urlocal/actions?query=workflow%3Avulnerabilities+branch%3Adev) |
+[![Vulnerabilities](https://github.com/pmonks/urlocal/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://github.com/pmonks/urlocal/actions?query=workflow%3Avulnerabilities+branch%3Adev)
 <br/>
 [![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/urlocal)](https://clojars.org/com.github.pmonks/urlocal/)
 [![Open Issues](https://img.shields.io/github/issues/pmonks/urlocal.svg)](https://github.com/pmonks/urlocal/issues)
