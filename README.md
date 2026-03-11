@@ -53,20 +53,17 @@ $ deps-try com.github.pmonks/urlocal
 (require '[urlocal.api :as url])
 
 
-(def cache-dir (io/file (str (System/getenv "HOME") "/.cache/urlocal")))
-;=> #'user/cache-dir
-
-(.exists cache-dir)
+(.exists (url/cache-dir))
 ;=> false
 
 (time (url/input-stream "https://spdx.org/licenses/licenses.json"))
 ;=> "Elapsed time: 298.22525 msecs"
 ;=> #object[java.io.BufferedInputStream 0x4373f66f "java.io.BufferedInputStream@4373f66f"]
 
-(.exists cache-dir)
+(.exists (url/cache-dir))
 ;=> true
 
-(map #(.getName %) (file-seq cache-dir))
+(map #(.getName %) (file-seq (url/cache-dir)))
 ;=> ("urlocal" "aHR0cHM6Ly9zcGR4Lm9yZy9saWNlbnNlcy9saWNlbnNlcy5qc29u.content" "aHR0cHM6Ly9zcGR4Lm9yZy9saWNlbnNlcy9saWNlbnNlcy5qc29u.metadata.edn")
 
 (time (url/input-stream "https://spdx.org/licenses/licenses.json"))
