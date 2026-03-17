@@ -5,19 +5,19 @@
         "dataSource": [
 {
                 "name": "NVD API Last Checked",
-                "timestamp": "2026-03-10T05:09:46Z"
+                "timestamp": "2026-03-17T06:04:25Z"
             }
 ,{
                 "name": "NVD API Last Modified",
-                "timestamp": "2026-03-09T21:23:43Z"
+                "timestamp": "2026-03-17T04:16:24Z"
             }
         ]
 
 
     },
     "projectInfo": {
-        "name": "com.github.pmonks\/urlocal 1.0.84-SNAPSHOT",
-        "reportDate": "2026-03-10T05:09:55.852972932Z",
+        "name": "com.github.pmonks\/urlocal 1.0.85-SNAPSHOT",
+        "reportDate": "2026-03-17T06:04:33.559435175Z",
         "credits": {
             "NVD": "This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov",
             "CISA": "This report may contain data retrieved from the CISA Known Exploited Vulnerability Catalog: https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
