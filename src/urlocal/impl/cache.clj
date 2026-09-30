@@ -20,6 +20,11 @@
 (def cache-dir-a                 (atom (str xdg/cache-home "urlocal")))
 (def cache-check-interval-secs-a (atom 86400))  ; 86400 seconds = 24 hours
 
+(defmacro silently
+  "Silently executes `body`, ignoring any/all exceptions thrown by body."
+  [& body]
+  `(try ~@body (catch Exception e#)))
+
 (defn base64-encode
   "Returns a BASE64 encoded representation (a String) of the UTF-8 String
   representation of x, or nil if x is nil"
@@ -188,8 +193,8 @@
                   (= response-code java.net.HttpURLConnection/HTTP_MOVED_TEMP)))
            (let [new-url (io/as-url (.getHeaderField conn "Location"))]
              ; Aggressively close connection to original url
-             (try (.close is)        (catch Throwable _))
-             (try (.disconnect conn) (catch Throwable _))
+             (silently (.close is))
+             (silently (.disconnect conn))
              (log/debugf "Request to %s redirected (%d) to %s" (str url) response-code (str new-url))
              (remove-cache-entry! url)  ; Remove any cache entries for the original URL, since it's no longer serving content
              (cache-miss! (http-get new-url opts) true already-retried? opts)
@@ -203,8 +208,8 @@
              (if (<= retry-after max-retry-after)
                (let [sleep-ms (long (* 1000 retry-after))]
                  ; Aggressively close connection to original url
-                 (try (.close is)        (catch Throwable _))
-                 (try (.disconnect conn) (catch Throwable _))
+                 (silently (.close is))
+                 (silently (.disconnect conn))
                  (log/debugf "Request to %s throttled (429), sleeping %ds then retrying..." (str url) retry-after)
                  (Thread/sleep sleep-ms)
                  (cache-miss! (http-get url opts) already-redirected? true opts))
@@ -214,8 +219,8 @@
          :else
            (throw (ex-info (str "Unexpected HTTP response from " url ": " response-code) (into {} (.getHeaderFields conn)))))
        (finally
-         (try (.close is)        (catch Throwable _))
-         (try (.disconnect conn) (catch Throwable _)))))))
+         (silently (.close is))
+         (silently (.disconnect conn)))))))
 
 (defmethod cache-miss! java.net.URL
   [^java.net.URL url opts]
@@ -256,8 +261,8 @@
           (if (= (.getResponseCode conn) java.net.HttpURLConnection/HTTP_NOT_MODIFIED)
             (do
               ; Don't need the connection any more, so close & disconnect it
-              (try (.close (.getInputStream conn)) (catch Throwable _))
-              (try (.disconnect conn)              (catch Throwable _))
+              (silently (.close (.getInputStream conn)))
+              (silently (.disconnect conn))
               (cache-hit! url metadata-file metadata))
             (cache-miss! conn opts)))  ; Handle a stale cache entry as a cache miss
         (catch Exception e
