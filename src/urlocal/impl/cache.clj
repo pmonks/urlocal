@@ -21,7 +21,8 @@
 (def cache-check-interval-secs-a (atom 86400))  ; 86400 seconds = 24 hours
 
 (defmacro silently
-  "Silently executes `body`, ignoring any/all exceptions thrown by body."
+  "Executes `body`, catching any/all thrown exceptions and returning `nil`
+  instead."
   [& body]
   `(try ~@body (catch Exception e#)))
 
@@ -105,7 +106,7 @@
 
 (defn http-get
   "Perform an HTTP GET request for `url`, using the given options,
-  returning a connected `HTTPUrlConnection` object.  It is the caller's
+  returning a connected `HttpURLConnection` object.  It is the caller's
   responsibility to disconnect the connection once processing is complete.
 
   Throws on IO errors."
@@ -121,7 +122,7 @@
                       (.setRequestMethod           "GET")
                       (.setConnectTimeout          connect-timeout)
                       (.setReadTimeout             read-timeout)
-                      (.setInstanceFollowRedirects false))]  ; Note: we handle redirects ourselves, to ensure cache coherence
+                      (.setInstanceFollowRedirects false))]  ; Note: we handle redirects manually, to ensure cache coherence
        (run! #(.setRequestProperty conn (key %) (val %)) (merge {"User-Agent" "https://github.com/pmonks/urlocal"} request-headers))  ; Note: ensure there's always a User-Agent header
        (.connect conn)
        conn))))
@@ -130,7 +131,7 @@
   "Gets the HTTP Retry-After header value from conn (which can be either an
   integer (# of seconds) or an HTTP date (as per RFC-2616)), returning a
   positive integer number of seconds to wait before retrying, or nil if the
-  header doesn't exist, the value is invalid (malformed, negative, etc.)."
+  header doesn't exist or the value is invalid (malformed, negative, etc.)."
   [^java.net.HttpURLConnection conn]
   (when (.getHeaderField conn "Retry-After")
     (let [retry-after-epoch (.getHeaderFieldDate conn "Retry-After " -1)]
@@ -140,7 +141,7 @@
           (if (neg? retry-after-seconds)
             nil    ; Not an integer either, so give up
             retry-after-seconds))
-        (let [now (.getTime       (java.util.Date.))
+        (let [now                 (.getTime (java.util.Date.))
               retry-after-seconds (Math/ceil (double (/ (- now retry-after-epoch) 1000)))]
           (if (neg? retry-after-seconds)
             nil
