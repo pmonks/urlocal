@@ -36,7 +36,7 @@
 (defn test-is
   ([url]     (test-is url nil))
   ([url opts]
-    (input-stream url (merge {:connect-timeout 5000 :read-timeout 5000} opts))))  ; Increase the default timeouts
+    (input-stream url (merge {:connect-timeout 5000 :read-timeout 20000} opts))))  ; Increase the default timeouts because GitHub actions can be slow af
 
 (deftest input-stream-tests
   (testing "nil, blank, etc."
